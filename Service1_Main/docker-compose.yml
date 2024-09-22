@@ -1,0 +1,9 @@
+version: '1'
+services:
+  nginx-service:
+    build: .
+    ports:
+      - "8080:80"
+    deploy:
+      replicas: 5
+    restart: always
