@@ -3,7 +3,7 @@ services:
   service-1:
     build: .
     ports:
-      - "8080:80"
+      - "8081:80"
     deploy:
       replicas: 5
     restart: always
