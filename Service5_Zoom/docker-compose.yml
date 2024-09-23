@@ -1,0 +1,7 @@
+version: '3'
+services:
+  service-5:
+    build: .
+    deploy:
+      mode: replicated
+      replicas: 5
