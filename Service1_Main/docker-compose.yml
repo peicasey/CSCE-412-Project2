@@ -1,6 +1,7 @@
+version: '3'
 services:
-  service-1:
-    image: seacloud/webapp
+  webapp:
+    build: .
     deploy:
       mode: replicated
-      replicas: 5
+      replicas: 6
