@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="public/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="public/logo.png" />
+
+    <script
+      src="https://kit.fontawesome.com/3bfc84097c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Seacloud</title>
+  </head>
+  <body>
+    <header style="height:53.5px;">
+      <a href="#" id="logo">
+        <img src="public/logo.png" width="20" height="20" alt="" />
+        <p>Seacloud</p>
+      </a>
+    </header>
+
+    <main>
+      <div class="answer-box">
+        <h2 style="text-align: center; margin-bottom: 40px;">
+          Entering the Developer Portal
+        </h2>
+
+        <div
+          style="max-width: 400px; margin: 0 auto; padding: 20px; padding-bottom: 40px; border-radius: 10px; background-color: #0b1129;"
+        >
+          <h2 style="text-align: center; color: #f5fbff;">
+            Log In
+          </h2>
+          <form
+            action="/submit-email"
+            method="POST"
+            style="display: flex; flex-direction: column; gap: 15px;"
+          >
+            <label for="name" style="color: #acacac; font-size: 14px;"
+              >Your Username:</label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username"
+              style="padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; background-color: #090f23; color:#7ebcff;"
+              required
+            />
+
+            <label for="email" style="color: #acacac; font-size: 14px;"
+              >Your Password:</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              style="padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; background-color: #090f23; color:#7ebcff;"
+              required
+            />
+
+            <button type="submit" class="button">
+              Log In
+            </button>
+          </form>
+        </div>
+
+        <p style="margin-top: 40px; text-align: center;">
+          <i>If you are running into any issues, please reach out to</i>
+          <i style="color:rgb(54, 171, 255);">IT@seacloud.com</i>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      Created for Texas A&M University's
+      <a
+        href="https://catalog.tamu.edu/undergraduate/course-descriptions/csce/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Cloud Computing (CSCE 412) Course
+      </a>
+      in Fall 2024.
+    </footer>
+  </body>
+  <script
+    src="https://website-widgets.pages.dev/dist/sienna.min.js"
+    defer=""
+  ></script>
+</html>
