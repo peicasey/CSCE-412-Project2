@@ -7,6 +7,7 @@ services:
     volumes:
       - ./Service1_Main:/usr/share/nginx/html 
     deploy:
+      mode: replicated
       replicas: 5  
     restart: always
 
@@ -17,6 +18,7 @@ services:
     volumes:
       - ./Service2_Auth:/usr/share/nginx/html
     deploy:
+      mode: replicated
       replicas: 5  
     restart: always
 
@@ -27,6 +29,7 @@ services:
     volumes:
       - ./Service3_Developer:/usr/share/nginx/html
     deploy:
+      mode: replicated
       replicas: 5  
     restart: always
 
@@ -37,6 +40,7 @@ services:
     volumes:
       - ./Service4_IT:/usr/share/nginx/html
     deploy:
+      mode: replicated
       replicas: 5  
     restart: always
 
@@ -47,5 +51,6 @@ services:
     volumes:
       - ./Service5_Zoom:/usr/share/nginx/html 
     deploy:
+      mode: replicated
       replicas: 5  
     restart: always
