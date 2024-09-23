@@ -1,9 +1,6 @@
-version: '3'
 services:
   service-1:
-    build: .
-    ports:
-      - "8081:80"
+    image: seacloud/webapp
     deploy:
+      mode: replicated
       replicas: 5
-    restart: always
